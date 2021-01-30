@@ -1,0 +1,17 @@
+Package: IGV
+Type: Package
+Title: A R package to creat interactive tracks in html by igv.js
+Version: 0.0.1
+Authors@R: c(person(given="Jianhong", family="Ou", email="jianhong.ou@duke.edu", 
+        role=c("aut", "cre"), comment=c(ORCID="0000-0002-8652-2488")))
+Maintainer: Jianhong Ou <jianhong.ou@duke.edu>
+Description: Visualize mapped reads along with annotation as track layers for 
+  NGS dataset in HTML webpage by igv.js .
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: htmlwidgets, methods, utils, httr
+Suggests: knitr
+biocViews: Visualization
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8

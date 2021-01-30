@@ -1,0 +1,39 @@
+---
+title: "IGV Vignette"
+author: "Jianhong Ou"
+vignette: >
+  %\VignetteIndexEntry{IGV Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+output:
+  html_document:
+    theme: simplex
+    toc: true
+    toc_float: true
+    toc_depth: 4
+    fig_caption: true
+---
+
+```{r, echo=FALSE, results="hide", warning=FALSE}
+suppressPackageStartupMessages({
+  library(IGV)
+  library(httr)
+})
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+```
+
+# Usage
+
+```{r}
+browseTracks(
+  "https://www.encodeproject.org/files/ENCFF356YES/@@download/ENCFF356YES.bigWig", 
+  genome="hg19", locus="chr11:122929275-122930122")
+
+```
+
+
+# Session Info
+```{r sessionInfo, results='asis'}
+sessionInfo()
+```
+
