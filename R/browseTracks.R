@@ -42,7 +42,7 @@ browseTracks <- function(tracks,
   availableFormats <- c("bed, gff, gff3, gtf, bedpe", "wig", "bigWig", 
                         "bedGraph", "bam", "vcf", "seg")
   
-  TYPES <- c(annotation=c("bed", "gff", "gff3", "gtf", 'genePred', "genePredExt",
+  TYPES <- list(annotation=c("bed", "gff", "gff3", "gtf", 'genePred', "genePredExt",
                           "peaks", "narrowPeak", "broadPeak", "bigBed", 
                           "bedpe"),
              alignment=c("bam"),
