@@ -33,7 +33,7 @@ browseTracks <- function(tracks,
     stop("tracks is required.")
   }
   if(missing(locus)){
-    stop("locus is required.")
+    locus = ""
   }
   if (missing(genome)){
     stop("genome is required")
